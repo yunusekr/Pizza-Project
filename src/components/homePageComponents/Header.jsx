@@ -6,7 +6,7 @@ function Header() {
   return (
     <header>
       <div className="headerDiv">
-        <h1>Teknolojik Yemekler</h1>
+        <img src="Assets/mile1-assets/logo.svg"></img>
         <p
           className="captionSlogan1"
           style={{ color: "yellow", paddingTop: "40px" }}

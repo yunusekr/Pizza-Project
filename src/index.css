@@ -6,11 +6,8 @@
   align-items: center;
 }
 
-.headerDiv h1 {
-  color: white;
-  font-family: "londrina-solid";
+.headerDiv img {
   padding-top: 3rem;
-  font-size: 2.5rem;
 }
 
 .captionSlogan2 {
@@ -31,6 +28,7 @@
   margin-top: 150px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -69,4 +67,75 @@
   font-size: 12px;
   color: #5f5f5f;
   font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 60px;
+  flex-wrap: wrap;
+}
+
+.firstContainer ul {
+  padding-left: 0;
+  padding-top: 2rem;
+  width: 306px;
+  height: 173.56px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.firstContainer ul p {
+  padding-left: 1rem;
+}
+
+.secondContainer {
+  padding-top: 40px;
+}
+
+.secondContainer li {
+  list-style-type: none;
+}
+
+.secondContainer ul {
+  padding-left: 0;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.thirdContainer {
+  width: 306px;
+  height: 291.7px;
+}
+
+.thirdContainer img {
+  width: 94.5px;
+  height: 94.5px;
+}
+
+.instaPhotos {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+.footerContainer {
+  height: 35.078125rem;
+  background: #292929;
+  margin-top: 5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.copyRight {
+  display: flex;
+  justify-content: space-around;
+  gap: 38rem;
 }

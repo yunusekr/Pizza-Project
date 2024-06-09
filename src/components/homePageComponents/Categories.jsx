@@ -3,14 +3,7 @@ import { Button } from "reactstrap";
 import { kategoriler } from "../../veriler";
 function Categories() {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        gap: "4rem",
-        marginTop: "2rem",
-      }}
-    >
+    <div className="categoryContainer">
       {kategoriler.map((items, index) => (
         <div key={index}>
           <Button style={{ border: "none", color: "black" }} outline>

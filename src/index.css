@@ -28,3 +28,24 @@
   font-family: "Satisfy";
   padding-top: 40px;
 }
+
+.advertsContainer {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.categoryContainer {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.advertsSameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

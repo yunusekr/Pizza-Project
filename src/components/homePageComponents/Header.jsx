@@ -4,7 +4,7 @@ import { Button } from "reactstrap";
 
 function Header() {
   return (
-    <div>
+    <header>
       <div className="headerDiv">
         <h1>Teknolojik Yemekler</h1>
         <p className="captionSlogan1">fırsatı kaçırma</p>
@@ -18,7 +18,7 @@ function Header() {
           ACIKTIM
         </Button>
       </div>
-    </div>
+    </header>
   );
 }
 

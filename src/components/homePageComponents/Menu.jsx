@@ -1,6 +1,4 @@
 import React from "react";
-import Categories from "./Categories";
-import { kategoriler } from "../../veriler";
 
 function Menu() {
   return (
@@ -11,15 +9,6 @@ function Menu() {
         </p>
       </div>
       <h1>Acıktıran Kodlara Doyuran Lezzetler</h1>
-      <div className="categoryContainer">
-        {kategoriler.map((items, index) => (
-          <Categories
-            key={index}
-            name={items.englishName}
-            icons={items.icons}
-          />
-        ))}
-      </div>
     </section>
   );
 }

@@ -4,6 +4,8 @@ import Categories from "./components/homePageComponents/Categories";
 import Adverts from "./components/homePageComponents/Adverts";
 import Menu from "./components/homePageComponents/Menu";
 import { kategoriler } from "./veriler";
+import Foods from "./components/homePageComponents/Foods";
+import Footer from "./components/Footer";
 
 function HomePage() {
   return (
@@ -16,6 +18,8 @@ function HomePage() {
       </div>
       <Adverts />
       <Menu />
+      <Foods />
+      <Footer />
     </>
   );
 }

@@ -7,7 +7,12 @@ function Header() {
     <header>
       <div className="headerDiv">
         <h1>Teknolojik Yemekler</h1>
-        <p className="captionSlogan1">fırsatı kaçırma</p>
+        <p
+          className="captionSlogan1"
+          style={{ color: "yellow", paddingTop: "40px" }}
+        >
+          fırsatı kaçırma
+        </p>
 
         <p className="captionSlogan2">KOD ACIKTIRIR</p>
         <p className="captionSlogan2">PIZZA, DOYURUR</p>

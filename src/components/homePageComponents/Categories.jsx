@@ -1,21 +1,33 @@
 import React from "react";
 import { Button } from "reactstrap";
-import { kategoriler } from "../../veriler";
-function Categories() {
+
+function Categories(props) {
+  const deneme = (event) => {
+    debugger;
+  };
+
   return (
-    <div className="categoryContainer">
-      {kategoriler.map((items, index) => (
-        <div key={index}>
-          <Button style={{ border: "none", color: "black" }} outline>
-            <img
-              style={{ paddingRight: "20px" }}
-              src={items.icons}
-              alt={items.name}
-            />
-            {items.name}
-          </Button>
-        </div>
-      ))}
+    <div>
+      <div key={props.index}>
+        <Button
+          onClick={deneme}
+          style={{
+            border: "none",
+            color: "black",
+            borderRadius: "3rem",
+            width: "186px",
+            height: "80px",
+          }}
+          outline
+        >
+          <img
+            style={{ paddingRight: "20px" }}
+            src={props.icons}
+            alt={props.name}
+          />
+          {props.name}
+        </Button>
+      </div>
     </div>
   );
 }

@@ -23,10 +23,8 @@
 }
 
 .captionSlogan1 {
-  color: yellow;
   font-size: 25px;
   font-family: "Satisfy";
-  padding-top: 40px;
 }
 
 .advertsContainer {
@@ -48,4 +46,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.MenuContainer {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

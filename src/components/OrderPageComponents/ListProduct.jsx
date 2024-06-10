@@ -25,12 +25,19 @@ function ListProduct() {
         <p>{stateData.foodName}</p>
       </b>
       <div className="productInfos">
-        <b>
-          <p>{stateData.foodPrice}</p>
-        </b>
-        <p>{stateData.foodPoint}</p>
-        <p>{"(" + stateData.foodCommentNo + ")"}</p>
+        <div>
+          <b>
+            <p style={{ fontSize: "1.8rem" }}>{stateData.foodPrice}</p>
+          </b>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: "6rem" }}>
+          <p className="foodInfop">{stateData.foodPoint}</p>
+          <p className="foodInfop">{"(" + stateData.foodCommentNo + ")"}</p>
+        </div>
       </div>
+      <p style={{ width: "97%", lineHeight: "1.8rem", color: " #5F5F5F" }}>
+        {stateData.foodDescription}
+      </p>
     </div>
   );
 }

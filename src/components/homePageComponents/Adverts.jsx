@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Card,
   CardImg,
@@ -7,8 +7,35 @@ import {
   CardTitle,
   Button,
 } from "reactstrap";
+import styled from "styled-components";
+
+const StyledButton = styled(Button)`
+  width: 138px;
+  height: 48px;
+  border-radius: 2rem;
+  color: red;
+  background: white;
+  border: none;
+  margin-top: 0.5rem;
+
+  &:hover {
+    background-color: #5f5f5f;
+  }
+`;
 import AdvertsSame from "./AdvertsSame";
+import { useHistory } from "react-router-dom";
+import { foods } from "../../veriler";
+
 function Adverts() {
+  let history = useHistory();
+
+  function dene(event) {
+    const filteredProduct = foods.find(
+      (food) => food.foodName === event.target.previousSibling.textContent
+    );
+    history.push({ pathname: "/order", state: { filteredProduct } });
+  }
+
   return (
     <section className="advertsContainer">
       <Card inverse>
@@ -33,21 +60,10 @@ function Adverts() {
             Özel <br />
             Lezzetus
           </CardTitle>
-          <CardText>Position:Absolute Acı Burger</CardText>
-          <Button
-            style={{
-              width: "138px",
-              height: "48px",
-              borderRadius: "2rem",
-              color: "red",
-              background: "white",
-              border: "none",
-              marginTop: "0.5rem",
-            }}
-            color="primary"
-          >
+          <CardText>Position:Absolute Acı Pizza</CardText>
+          <StyledButton onClick={dene} color="primary">
             SİPARİŞ VER
-          </Button>
+          </StyledButton>
         </CardImgOverlay>
       </Card>
       <div className="advertsSameContainer">

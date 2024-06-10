@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./components/homePageComponents/Header";
-import Categories from "./components/homePageComponents/Categories";
-import Adverts from "./components/homePageComponents/Adverts";
-import Menu from "./components/homePageComponents/Menu";
-import { kategoriler } from "./veriler";
-import Foods from "./components/homePageComponents/Foods";
+import Header from "../src/components/homePageComponents/Header";
+import Categories from "../src/components/homePageComponents/Categories";
+import Adverts from "../src/components/homePageComponents/Adverts";
+import Menu from "../src/components/homePageComponents/Menu";
+import { kategoriler } from "../src/veriler";
+import Foods from "../src/components/homePageComponents/Foods";
 import Footer from "./components/Footer";
 
 function HomePage() {

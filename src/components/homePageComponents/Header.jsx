@@ -2,6 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "reactstrap";
 
+const StyledButton = styled(Button)`
+  width: 193.27px;
+  height: 56px;
+  border-radius: 2rem;
+`;
+
 function Header() {
   return (
     <header>
@@ -16,12 +22,7 @@ function Header() {
 
         <p className="captionSlogan2">KOD ACIKTIRIR</p>
         <p className="captionSlogan2">PIZZA, DOYURUR</p>
-        <Button
-          style={{ width: "193.27px", height: "56px", borderRadius: "2rem" }}
-          color="warning"
-        >
-          ACIKTIM
-        </Button>
+        <StyledButton color="warning">ACIKTIM</StyledButton>
       </div>
     </header>
   );

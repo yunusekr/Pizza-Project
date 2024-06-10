@@ -7,6 +7,22 @@ import {
   CardTitle,
   Button,
 } from "reactstrap";
+import styled from "styled-components";
+
+const StyledButton = styled(Button)`
+  width: 138px;
+  height: 48px;
+  border-radius: 2rem;
+  color: red;
+  background: white;
+  border: none;
+  margin-top: 1rem;
+
+  &:hover {
+    background-color: #5f5f5f;
+  }
+`;
+
 function AdvertsSame(props) {
   return (
     <div>
@@ -42,20 +58,7 @@ function AdvertsSame(props) {
             <br />
             {props.secondText}
           </CardTitle>
-          <Button
-            style={{
-              width: "138px",
-              height: "48px",
-              borderRadius: "2rem",
-              color: "red",
-              background: "white",
-              border: "none",
-              marginTop: "1rem",
-            }}
-            color="primary"
-          >
-            SİPARİŞ VER
-          </Button>
+          <StyledButton color="primary">SİPARİŞ VER</StyledButton>
         </CardImgOverlay>
       </Card>
     </div>

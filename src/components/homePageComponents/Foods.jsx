@@ -32,14 +32,7 @@ function Foods() {
         ))}
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "5rem",
-          marginTop: "50px",
-        }}
-      >
+      <div className="cardsContains">
         {filteredFoods.map((items, index) => (
           <FoodCards key={index} foodObj={items} />
         ))}

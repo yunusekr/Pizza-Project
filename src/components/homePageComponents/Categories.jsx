@@ -1,5 +1,18 @@
 import React, { useState } from "react";
 import { Button } from "reactstrap";
+import styled from "styled-components";
+
+const StyledButton = styled(Button)`
+  border: none;
+  border-radius: 3rem;
+  color: black;
+  width: 186px;
+  height: 80px;
+
+  &:hover {
+    background-color: #292929;
+  }
+`;
 
 function Categories(props) {
   const findText = (e) => {
@@ -12,16 +25,7 @@ function Categories(props) {
   return (
     <div>
       <div key={props.index} onClick={findText}>
-        <Button
-          style={{
-            border: "none",
-            color: "black",
-            borderRadius: "3rem",
-            width: "186px",
-            height: "80px",
-          }}
-          outline
-        >
+        <StyledButton outline>
           <img
             style={{ paddingRight: "20px" }}
             src={props.icons}
@@ -29,7 +33,7 @@ function Categories(props) {
             onClick={findText}
           />
           {props.name}
-        </Button>
+        </StyledButton>
       </div>
     </div>
   );

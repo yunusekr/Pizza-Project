@@ -42,7 +42,7 @@ export const foods = [
   },
   {
     foodImg: "Assets/mile2-aseets/pictures/food-2.png",
-    foodName: "Position Absolute Acı Pizza",
+    foodName: "Position:Absolute Acı Pizza",
     foodPoint: "4.9",
     foodCommentNo: "928",
     foodPrice: "85₺",

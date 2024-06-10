@@ -29,7 +29,7 @@ import { foods } from "../../veriler";
 function Adverts() {
   let history = useHistory();
 
-  function dene(event) {
+  function goOrderPage(event) {
     const filteredProduct = foods.find(
       (food) => food.foodName === event.target.previousSibling.textContent
     );
@@ -61,7 +61,7 @@ function Adverts() {
             Lezzetus
           </CardTitle>
           <CardText>Position:Absolute Acı Pizza</CardText>
-          <StyledButton onClick={dene} color="primary">
+          <StyledButton onClick={goOrderPage} color="primary">
             SİPARİŞ VER
           </StyledButton>
         </CardImgOverlay>

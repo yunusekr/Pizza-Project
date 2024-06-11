@@ -40,8 +40,8 @@ function AdvertsSame(props) {
           <CardTitle
             style={{
               fontSize: "30px",
-              fontFamily: "quattrocento",
-              fontWeight: "bold",
+              fontFamily: "barlow",
+              fontWeight: "600px",
               color: props.firstText === "hızlı" ? "black" : "white",
             }}
             tag="h1"

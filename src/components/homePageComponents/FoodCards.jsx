@@ -29,7 +29,7 @@ function FoodCards(props) {
     );
 
     const filteredProduct = foods.find((food) => food.foodName === productName);
-
+    window.scrollTo(0, 0);
     history.push({ pathname: "/order", state: { filteredProduct } });
   }
 
@@ -45,7 +45,12 @@ function FoodCards(props) {
           alt="Card"
           src={props.foodObj.foodImg}
         />
-        <CardBody>
+        <CardBody
+          style={{
+            fontFamily: "barlow",
+            fontWeight: "600px",
+          }}
+        >
           <CardTitle tag="h6">{props.foodObj.foodName}</CardTitle>
           <div className="foodInfo">
             <p className="foodInfop">{props.foodObj.foodPoint}</p>

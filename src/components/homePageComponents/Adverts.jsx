@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Card,
   CardImg,
@@ -33,6 +33,7 @@ function Adverts() {
     const filteredProduct = foods.find(
       (food) => food.foodName === event.target.previousSibling.textContent
     );
+    window.scrollTo(0, 0);
     history.push({ pathname: "/order", state: { filteredProduct } });
   }
 
@@ -60,7 +61,9 @@ function Adverts() {
             Özel <br />
             Lezzetus
           </CardTitle>
-          <CardText>Position:Absolute Acı Pizza</CardText>
+          <CardText style={{ fontFamily: "barlow" }}>
+            Position:Absolute Acı Pizza
+          </CardText>
           <StyledButton onClick={goOrderPage} color="primary">
             SİPARİŞ VER
           </StyledButton>

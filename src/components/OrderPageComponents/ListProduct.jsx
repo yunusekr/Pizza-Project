@@ -22,7 +22,7 @@ function ListProduct() {
         </span>
       </nav>
       <b>
-        <p>{stateData.foodName}</p>
+        <p>{stateData.foodName !== undefined ? stateData.foodName : ""}</p>
       </b>
       <div className="productInfos">
         <div>

@@ -221,3 +221,48 @@ export const foods = [
       "Frontend Dev olarak hala position:absolute kullanıyorsun bu çok acı pizza tam sana göre.Pizza,domates,peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen,genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir.Küçük bir pizzaya bazen pizzetta denir.",
   },
 ];
+
+export const AddingMaterials = [
+  {
+    name: "Pepperoni",
+  },
+  {
+    name: "Tavuk Izgara",
+  },
+  {
+    name: "Mısır",
+  },
+  {
+    name: "Sarımsak",
+  },
+  {
+    name: "Ananas",
+  },
+  {
+    name: "Sosis",
+  },
+  {
+    name: "Soğan",
+  },
+  {
+    name: "Sucuk",
+  },
+  {
+    name: "Biber",
+  },
+  {
+    name: "Kabak",
+  },
+  {
+    name: "Kanada Jambonu",
+  },
+  {
+    name: "Domates",
+  },
+  {
+    name: "Jalepeno",
+  },
+  {
+    name: "Sucuk",
+  },
+];

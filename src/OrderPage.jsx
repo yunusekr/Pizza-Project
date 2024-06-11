@@ -10,7 +10,6 @@ function OrderPage() {
       <OrdersHeader />
       <div className="OrderPageGeneralContainer">
         <ListProduct />
-        <Forms />
       </div>
     </>
   );

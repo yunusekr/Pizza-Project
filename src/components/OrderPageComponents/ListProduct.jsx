@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
+import Forms from "./Forms";
+
 const StyledNav = styled(NavLink)`
   text-decoration: none;
   font-size: 15px;
@@ -11,6 +13,8 @@ const StyledNav = styled(NavLink)`
 function ListProduct() {
   const location = useLocation();
   const stateData = location.state?.filteredProduct;
+  const [productPrice, setProductPrice] = useState(stateData.foodPrice);
+
   return (
     <div>
       <nav className="linksAndProductContainer">
@@ -27,7 +31,9 @@ function ListProduct() {
       <div className="productInfos">
         <div>
           <b>
-            <p style={{ fontSize: "1.8rem" }}>{stateData.foodPrice}</p>
+            <p className="foodPrice" style={{ fontSize: "1.8rem" }}>
+              {stateData.foodPrice}
+            </p>
           </b>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: "6rem" }}>
@@ -38,6 +44,7 @@ function ListProduct() {
       <p style={{ width: "97%", lineHeight: "1.8rem", color: " #5F5F5F" }}>
         {stateData.foodDescription}
       </p>
+      <Forms price={productPrice} />
     </div>
   );
 }

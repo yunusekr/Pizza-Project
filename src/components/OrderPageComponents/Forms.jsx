@@ -10,12 +10,13 @@ import {
 import { useForm } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
 import { VscNoNewline } from "react-icons/vsc";
+import FormsSubSection from "./FormsSubSection";
 
 const StyledInput = styled(Input)`
   border: 1px solid #ce2829;
 `;
 
-function Forms() {
+function Forms(props) {
   let history = useHistory();
 
   const {
@@ -29,6 +30,7 @@ function Forms() {
     },
   });
   const selectedMaterials = watch("materials");
+
   const onSubmit = (data) => {
     console.log(data);
   };
@@ -205,7 +207,10 @@ function Forms() {
           />
         </FormGroup>
 
-        <Button>Submit</Button>
+        <FormsSubSection
+          addedMaterials={selectedMaterials}
+          productsPrices={props.price}
+        />
       </Form>
     </>
   );

@@ -35,4 +35,20 @@
   gap: 22rem;
 }
 
+.formSubContainer button {
+  border: none;
+  width: 47px;
+  height: 56px;
+}
+
+.formSubElements {
+  display: flex;
+  gap: 10rem;
+}
+
+.elements {
+  display: flex;
+  gap: 10rem;
+}
+
 /* ORDERPAGE*/

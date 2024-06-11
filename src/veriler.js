@@ -238,6 +238,9 @@ export const AddingMaterials = [
   {
     name: "Ananas",
   },
+];
+
+export const AddingMaterials2 = [
   {
     name: "Sosis",
   },
@@ -253,6 +256,9 @@ export const AddingMaterials = [
   {
     name: "Kabak",
   },
+];
+
+export const AddingMaterials3 = [
   {
     name: "Kanada Jambonu",
   },
@@ -263,6 +269,6 @@ export const AddingMaterials = [
     name: "Jalepeno",
   },
   {
-    name: "Sucuk",
+    name: "Salam",
   },
 ];

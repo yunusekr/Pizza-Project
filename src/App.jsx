@@ -2,6 +2,7 @@ import "./App.css";
 import HomePage from "./HomePage";
 import { Route, Switch } from "react-router";
 import OrderPage from "./OrderPage";
+import OrderCompletedPage from "./OrderCompletedPage";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       </Route>
       <Route path="/order">
         <OrderPage />
+      </Route>
+      <Route path="/accepted">
+        <OrderCompletedPage />
       </Route>
     </>
   );

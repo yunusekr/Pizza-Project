@@ -14,6 +14,7 @@ function ListProduct() {
   const location = useLocation();
   const stateData = location.state?.filteredProduct;
   const [productPrice, setProductPrice] = useState(stateData.foodPrice);
+  const [productName, setProductName] = useState(stateData.foodName);
 
   return (
     <div>
@@ -44,7 +45,7 @@ function ListProduct() {
       <p style={{ width: "97%", lineHeight: "1.8rem", color: " #5F5F5F" }}>
         {stateData.foodDescription}
       </p>
-      <Forms price={productPrice} />
+      <Forms price={productPrice} productNames={productName} />
     </div>
   );
 }

@@ -86,15 +86,8 @@ function Forms(props) {
 
   return (
     <>
-      <form
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "2rem",
-          fontFamily: "barlow",
-        }}
-      >
-        <div style={{ display: "flex", flexDirection: "column" }}>
+      <form className="formContainer">
+        <fieldset style={{ display: "flex", flexDirection: "column" }}>
           <div className="sizeAndThick">
             <div>
               <legend>
@@ -160,13 +153,7 @@ function Forms(props) {
               En fazla 10 tane malzeme seçebilirsiniz.5₺
             </span>
           )}
-          <aside
-            style={{
-              height: "300px",
-              display: "flex",
-              justifyContent: "space-between",
-            }}
-          >
+          <aside className="formCheckboxes">
             {/*1.checkbox grubu*/}
             <div
               style={{
@@ -176,15 +163,9 @@ function Forms(props) {
               }}
             >
               {AddingMaterials.map((items, index) => (
-                <div
-                  style={{ display: "flex", alignItems: "center", gap: "1rem" }}
-                  key={index}
-                >
+                <div className="checkboxesGroups" key={index}>
                   <input
-                    style={{
-                      width: "45px",
-                      height: "45px",
-                    }}
+                    className="checkboxInputs"
                     type="checkbox"
                     {...register("materials")}
                     value={items.name}
@@ -209,15 +190,9 @@ function Forms(props) {
               }}
             >
               {AddingMaterials2.map((items, index) => (
-                <div
-                  style={{ display: "flex", alignItems: "center", gap: "1rem" }}
-                  key={index}
-                >
+                <div className="checkboxesGroups" key={index}>
                   <input
-                    style={{
-                      width: "45px",
-                      height: "45px",
-                    }}
+                    className="checkboxInputs"
                     type="checkbox"
                     {...register("materials")}
                     value={items.name}
@@ -242,12 +217,9 @@ function Forms(props) {
               }}
             >
               {AddingMaterials3.map((items, index) => (
-                <div
-                  style={{ display: "flex", alignItems: "center", gap: "1rem" }}
-                  key={index}
-                >
+                <div className="checkboxesGroups" key={index}>
                   <input
-                    style={{ width: "45px", height: "45px" }}
+                    className="checkboxInputs"
                     type="checkbox"
                     {...register("materials")}
                     value={items.name}
@@ -263,7 +235,7 @@ function Forms(props) {
               ))}
             </div>
           </aside>
-        </div>
+        </fieldset>
         <div style={{ paddingLeft: "0" }}>
           <div>
             <label htmlFor="Name">İsim</label>

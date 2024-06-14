@@ -37,14 +37,12 @@ function ListProduct() {
             </p>
           </b>
         </div>
-        <div style={{ display: "flex", alignItems: "center", gap: "6rem" }}>
+        <div className="pointAndComment">
           <p className="foodInfop">{stateData.foodPoint}</p>
           <p className="foodInfop">{"(" + stateData.foodCommentNo + ")"}</p>
         </div>
       </div>
-      <p style={{ width: "97%", lineHeight: "1.8rem", color: " #5F5F5F" }}>
-        {stateData.foodDescription}
-      </p>
+      <p>{stateData.foodDescription}</p>
       <Forms price={productPrice} productNames={productName} />
     </article>
   );

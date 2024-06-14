@@ -39,6 +39,42 @@
   gap: 22rem;
 }
 
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "barlow";
+}
+
+.formCheckboxes {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkboxesGroups {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkboxInputs {
+  width: 45px;
+  height: 45px;
+}
+
+.pointAndComment {
+  display: flex;
+  align-items: "center";
+  gap: 6rem;
+}
+
+article > p:last-of-type {
+  width: 97%;
+  line-height: 1.8rem;
+  color: #5f5f5f;
+}
+
 .formSubContainer button {
   border: none;
   width: 47px;

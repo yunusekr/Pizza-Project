@@ -6,12 +6,12 @@ function OrdersHeader() {
       <div className="orderHeader">
         <img src="Assets/mile1-assets/logo.svg" alt="Logo" />
       </div>
-      <div className="orderHeaderImage">
-        <img
-          src="Assets/mile2-aseets/pictures/form-banner.png"
-          alt="pizza image"
-        />
-      </div>
+
+      <img
+        style={{ marginTop: "-90px", zIndex: "-1" }}
+        src="Assets/mile2-aseets/pictures/form-banner.png"
+        alt="pizza image"
+      />
     </header>
   );
 }

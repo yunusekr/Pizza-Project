@@ -22,6 +22,18 @@ const StyledButton = styled(Button)`
     background-color: #5f5f5f;
   }
 `;
+
+const StyledCardTitle = styled(CardTitle)`
+  font-size: 4vw;
+  font-family: quattrocento;
+  font-weight: bold;
+`;
+
+const StyledCardImgOverlay = styled(CardImgOverlay)`
+  margin-top: 2rem;
+  margin-left: 2rem;
+`;
+
 import AdvertsSame from "./AdvertsSame";
 import { useHistory } from "react-router-dom";
 import { foods } from "../../veriler";
@@ -43,31 +55,20 @@ function Adverts() {
         <CardImg
           alt="Card image cap"
           src="Assets/mile2-aseets/cta/kart-1.png"
-          style={{
-            width: 636,
-            height: 535.75,
-          }}
           width="100%"
         />
-        <CardImgOverlay style={{ marginTop: "2rem", marginLeft: "2rem" }}>
-          <CardTitle
-            style={{
-              fontSize: "60px",
-              fontFamily: "quattrocento",
-              fontWeight: "bold",
-            }}
-            tag="h1"
-          >
+        <StyledCardImgOverlay>
+          <StyledCardTitle tag="h1">
             Özel <br />
             Lezzetus
-          </CardTitle>
+          </StyledCardTitle>
           <CardText style={{ fontFamily: "barlow" }}>
             Position:Absolute Acı Pizza
           </CardText>
           <StyledButton onClick={goOrderPage} color="primary">
             SİPARİŞ VER
           </StyledButton>
-        </CardImgOverlay>
+        </StyledCardImgOverlay>
       </Card>
       <div className="advertsSameContainer">
         <AdvertsSame

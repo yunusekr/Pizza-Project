@@ -17,3 +17,46 @@
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
 }
+
+.topInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productName {
+  font-family: "barlow";
+  font-size: 22px;
+  font-weight: 600px;
+}
+
+.order-completed-page dl {
+  width: 201px;
+  height: 153px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  font-family: "barlow";
+  font-size: 16px;
+}
+
+.order-completed-page section {
+  width: 288px;
+  height: 191px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  justify-content: center;
+  padding-left: 45px;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+  font-family: "barlow";
+  font-weight: 600px;
+}
+
+@media (max-width: 768px) {
+  .Siparis {
+    text-align: center;
+  }
+}

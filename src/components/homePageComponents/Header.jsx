@@ -11,19 +11,14 @@ const StyledButton = styled(Button)`
 function Header() {
   return (
     <header>
-      <div className="headerDiv">
+      <figure className="headerDiv">
         <img src="Assets/mile1-assets/logo.svg"></img>
-        <p
-          className="captionSlogan1"
-          style={{ color: "yellow", paddingTop: "40px" }}
-        >
-          fırsatı kaçırma
-        </p>
-
-        <p className="captionSlogan2">KOD ACIKTIRIR</p>
-        <p className="captionSlogan2">PIZZA, DOYURUR</p>
+        <p className="captionSlogan1 forPadding">fırsatı kaçırma</p>
+        <h2 className="captionSlogan2">
+          KOD ACIKTIRIR <br /> PIZZA, DOYURUR
+        </h2>
         <StyledButton color="warning">ACIKTIM</StyledButton>
-      </div>
+      </figure>
     </header>
   );
 }

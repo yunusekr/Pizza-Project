@@ -17,7 +17,7 @@ function ListProduct() {
   const [productName, setProductName] = useState(stateData.foodName);
 
   return (
-    <div>
+    <article>
       <nav className="linksAndProductContainer">
         <StyledNav to="/" exact activeClassName="active">
           Anasayfa
@@ -46,7 +46,7 @@ function ListProduct() {
         {stateData.foodDescription}
       </p>
       <Forms price={productPrice} productNames={productName} />
-    </div>
+    </article>
   );
 }
 

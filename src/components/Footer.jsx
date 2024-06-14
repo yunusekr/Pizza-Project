@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footerContainer">
       <div className="footer">
         <div style={{ display: "flex", flexWrap: "wrap" }}>
-          <div className="firstContainer">
+          <address className="firstContainer">
             <img src="Assets/mile2-aseets/footer/logo-footer.svg" />
             <ul>
               <li
@@ -57,7 +57,7 @@ function Footer() {
                 <p>+90 216 123 45 67</p>
               </li>
             </ul>
-          </div>
+          </address>
           <div className="secondContainer">
             <h5>Sıccacık Menuler</h5>
             <ul>

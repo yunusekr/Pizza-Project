@@ -23,7 +23,7 @@ function Categories(props) {
     }
   };
   return (
-    <div>
+    <section>
       <div key={props.index} onClick={findText}>
         <StyledButton outline>
           <img
@@ -35,7 +35,7 @@ function Categories(props) {
           {props.name}
         </StyledButton>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -9,7 +9,6 @@ import {
 } from "../../veriler";
 import { useForm } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
-import { VscNoNewline } from "react-icons/vsc";
 
 import axios from "axios";
 
@@ -22,6 +21,7 @@ function Forms(props) {
 
   const [isHamurSelected, setIsHamurSelected] = useState(false);
   const [isSizeSelected, setIsSizeSelected] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -62,7 +62,7 @@ function Forms(props) {
   const totalPrice =
     Number(props.price.slice(0, props.price.length - 1)) * counter + addings;
 
-  const onSubmit = (data) => {
+  const onSubmit = (data, event) => {
     if (!isHamurSelected || !isSizeSelected) {
       return;
     }
@@ -86,12 +86,16 @@ function Forms(props) {
 
   return (
     <>
-      <form style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-        <div
-          style={{ display: "flex", flexDirection: "column" }}
-          tag="fieldset"
-        >
-          <div style={{ display: "flex", gap: "10rem", marginTop: "1rem" }}>
+      <form
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "2rem",
+          fontFamily: "barlow",
+        }}
+      >
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div className="sizeAndThick">
             <div>
               <legend>
                 Boyut Seç<span style={{ color: "red" }}>*</span>
@@ -180,7 +184,6 @@ function Forms(props) {
                     style={{
                       width: "45px",
                       height: "45px",
-                      border: "none",
                     }}
                     type="checkbox"
                     {...register("materials")}
@@ -211,7 +214,10 @@ function Forms(props) {
                   key={index}
                 >
                   <input
-                    style={{ width: "45px", height: "45px" }}
+                    style={{
+                      width: "45px",
+                      height: "45px",
+                    }}
                     type="checkbox"
                     {...register("materials")}
                     value={items.name}
@@ -298,23 +304,32 @@ function Forms(props) {
               <button onClick={increase}>+</button>
             </div>
 
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                marginTop: "2rem",
+              }}
+            >
               <h6>Sipariş Toplamı</h6>
-              <div className="elements">
+
+              <div className="formSubElements">
                 <p style={{ color: " #5F5F5F" }}>Seçimler</p>
                 <p style={{ color: " #5F5F5F" }}>{addings + "₺"}</p>
               </div>
-              <div className="elements">
+              <div className="formSubElements">
                 <p style={{ color: "#CE2829" }}>Toplam</p>
                 <p style={{ color: "#CE2829" }}>{totalPrice + "₺"}</p>
               </div>
-              <Button
-                onClick={handleSubmit(onSubmit)}
-                style={{ width: "386px", height: "62px" }}
-                color="warning"
-              >
-                SİPARİŞ VER
-              </Button>
+              <div className="OrderButton">
+                <Button
+                  onClick={handleSubmit(onSubmit)}
+                  style={{ width: "386px", height: "62px" }}
+                  color="warning"
+                >
+                  SİPARİŞ VER
+                </Button>
+              </div>
             </div>
           </div>
         </section>

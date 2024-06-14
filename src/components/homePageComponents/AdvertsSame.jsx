@@ -23,25 +23,25 @@ const StyledButton = styled(Button)`
   }
 `;
 
+const StyledCardImgOverlay = styled(CardImgOverlay)`
+  margin-top: 2rem;
+  margin-left: 2rem;
+`;
+
+const StyledCardTitle = styled(CardTitle)`
+  font-size: 2vw;
+  font-family: barlow;
+  font-weight: 600px;
+`;
+
 function AdvertsSame(props) {
   return (
     <div>
       <Card inverse>
-        <CardImg
-          alt="Card image cap"
-          src={props.imgUrl}
-          style={{
-            width: 636,
-            height: 255.53,
-          }}
-          width="100%"
-        />
-        <CardImgOverlay style={{ marginTop: "2rem", marginLeft: "2rem" }}>
-          <CardTitle
+        <CardImg alt="Card image cap" src={props.imgUrl} width="100%" />
+        <StyledCardImgOverlay>
+          <StyledCardTitle
             style={{
-              fontSize: "30px",
-              fontFamily: "barlow",
-              fontWeight: "600px",
               color: props.firstText === "hızlı" ? "black" : "white",
             }}
             tag="h1"
@@ -57,9 +57,9 @@ function AdvertsSame(props) {
             {" " + props.firstText}
             <br />
             {props.secondText}
-          </CardTitle>
+          </StyledCardTitle>
           <StyledButton color="primary">SİPARİŞ VER</StyledButton>
-        </CardImgOverlay>
+        </StyledCardImgOverlay>
       </Card>
     </div>
   );

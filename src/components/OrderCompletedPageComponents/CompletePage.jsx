@@ -9,63 +9,52 @@ function CompletePage() {
   const productName = location.state?.productName;
 
   return (
-    <section className="order-completed-page ">
-      <div>
-        <img src="Assets/mile1-assets/logo.svg" alt="" />
-        <div>
-          <p className="captionSlogan1" style={{ color: "yellow" }}>
-            lezzetin yolda
-          </p>
-          <p className="Siparis">SİPARİŞ ALINDI</p>
+    <output className="order-completed-page ">
+      <main className="topInfo">
+        <div style={{ paddingBottom: "4rem" }}>
+          <img src="Assets/mile1-assets/logo.svg" alt="" />
         </div>
-        <hr style={{ color: "white" }} />
-      </div>
-      <div
-        style={{
-          width: "201px",
-          height: "153px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "1rem",
-        }}
-      >
-        <p>{productName}</p>
+        <p
+          className="captionSlogan1"
+          style={{ color: "yellow", paddingBottom: "1rem" }}
+        >
+          lezzetin yolda
+        </p>
+        <p className="Siparis">SİPARİŞ ALINDI</p>
+        <hr style={{ color: "#FAF7F2", width: "100%" }} />
+      </main>
+
+      <p class="productName">{productName}</p>
+      <dl>
         <span>
-          Boyut: <span> {" " + stateData.boyut}</span>
+          Boyut:{" "}
+          <span style={{ fontWeight: "700" }}> {" " + stateData.boyut}</span>
         </span>
         <span>
-          Hamur: <span>{" " + stateData.hamur}</span>
+          Hamur:{" "}
+          <span style={{ fontWeight: "700" }}>{" " + stateData.hamur}</span>
         </span>
         <span>
           Ek Malzemeler:
           {stateData.materials.map((items, index) => (
-            <span key={index}>{" " + items + ","}</span>
+            <span style={{ fontWeight: "700" }} key={index}>
+              {" " + items + ","}
+            </span>
           ))}
         </span>
-      </div>
-      <div
-        style={{
-          width: "288px",
-          height: "191px",
-          display: "flex",
-          flexDirection: "column",
-          border: "1px solid white",
-          justifyContent: "center",
-          paddingLeft: "45px",
-          borderRadius: "0.3rem",
-        }}
-      >
-        <p>Sipariş Toplamı</p>
-        <div style={{ display: "flex", gap: "6rem" }}>
+      </dl>
+      <section>
+        <p style={{ fontSize: "20px" }}>Sipariş Toplamı</p>
+        <div style={{ display: "flex", gap: "3.9rem" }}>
           <span>Seçimler</span>
           <span>{addings + "₺"}</span>
         </div>
-        <div style={{ display: "flex", gap: "6rem" }}>
+        <div style={{ display: "flex", gap: "4.5rem" }}>
           <span>Toplam</span>
           <span>{total + "₺"}</span>
         </div>
-      </div>
-    </section>
+      </section>
+    </output>
   );
 }
 

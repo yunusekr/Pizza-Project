@@ -338,6 +338,7 @@ function Forms(props) {
                   onClick={handleSubmit(onSubmit)}
                   style={{ width: "386px", height: "62px" }}
                   color="warning"
+                  className="OrderedButton"
                 >
                   SİPARİŞ VER
                 </Button>

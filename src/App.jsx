@@ -1,6 +1,6 @@
 import "./App.css";
 import HomePage from "./HomePage";
-import { Route, Switch } from "react-router";
+import { Route, Switch } from "react-router-dom";
 import OrderPage from "./OrderPage";
 import OrderCompletedPage from "./OrderCompletedPage";
 

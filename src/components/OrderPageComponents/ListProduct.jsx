@@ -33,7 +33,7 @@ function ListProduct() {
         <div>
           <b>
             <p className="foodPrice" style={{ fontSize: "1.8rem" }}>
-              {stateData.foodPrice}
+              {stateData.foodPrice !== undefined ? stateData.foodPrice : ""}
             </p>
           </b>
         </div>

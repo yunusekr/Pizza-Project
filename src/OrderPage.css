@@ -52,6 +52,11 @@
   justify-content: space-between;
 }
 
+.formCheckboxes span {
+  color: #5f5f5f;
+  font-weight: bold;
+}
+
 .checkboxesGroups {
   display: flex;
   align-items: center;
@@ -90,6 +95,109 @@ article > p:last-of-type {
   display: flex;
   gap: 10rem;
   margin-top: 1rem;
+}
+
+.checkbox-btn {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox-btn span {
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  transition: 0.3s;
+}
+
+.checkbox-btn span::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 12px;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  transform: scale(0) rotate(-45deg);
+  position: relative;
+  bottom: 4px;
+  transition: 0.6s;
+}
+
+.checkbox-btn input {
+  display: none;
+}
+
+.checkbox-btn input:checked ~ span {
+  background-color: #fdc913;
+}
+
+.checkbox-btn input:checked ~ span::before {
+  transform: scale(1) rotate(-45deg);
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.checkmark:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.checkmark:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #fdc913;
+  border-radius: 50%;
+  top: -1px;
+  left: -1px;
+  transform: scale(0);
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: none;
+  color: black;
+}
+.container input:checked ~ .checkmark:hover {
+  background: rgba(0, 0, 0, 0);
+}
+
+.container input:checked ~ .checkmark:before {
+  transform: scale(1);
 }
 
 @media (max-width: 768px) {

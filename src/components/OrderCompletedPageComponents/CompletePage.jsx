@@ -7,7 +7,7 @@ function CompletePage() {
   const addings = location.state?.secimler;
   const total = location.state?.toplam;
   const productName = location.state?.productName;
-
+  console.log(stateData);
   return (
     <output className="order-completed-page ">
       <main className="topInfo">

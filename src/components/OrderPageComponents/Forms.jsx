@@ -16,6 +16,16 @@ const StyledInput = styled(Input)`
   border: 1px solid #ce2829;
 `;
 
+const Checkbox = styled.input`
+  /* Default styles */
+  margin-right: 5px;
+
+  /* Conditional styles based on checked state */
+  &:checked {
+    background-color: yellow; /* Sarı arkaplan rengi */
+  }
+`;
+
 function Forms(props) {
   let history = useHistory();
 
@@ -88,40 +98,52 @@ function Forms(props) {
     <>
       <form className="formContainer">
         <fieldset style={{ display: "flex", flexDirection: "column" }}>
-          <div className="sizeAndThick">
+          <fieldset className="sizeAndThick">
             <div>
               <legend>
                 Boyut Seç<span style={{ color: "red" }}>*</span>
               </legend>
               <div style={{ display: "flex", gap: "0.5rem" }}>
-                <input
-                  type="radio"
-                  value="S"
-                  {...register("boyut")}
-                  onChange={handleSizeChange}
-                />
-                <label>S</label>
-                <input
-                  type="radio"
-                  value="M"
-                  {...register("boyut")}
-                  onChange={handleSizeChange}
-                />{" "}
-                <label>M</label>
-                <input
-                  type="radio"
-                  value="L"
-                  {...register("boyut")}
-                  onChange={handleSizeChange}
-                />{" "}
-                <label>L</label>
+                <label class="container">
+                  <input
+                    type="radio"
+                    value="S"
+                    {...register("boyut")}
+                    onChange={handleSizeChange}
+                  />
+                  <span class="checkmark">S</span>
+                </label>
+                <label class="container">
+                  <input
+                    type="radio"
+                    value="M"
+                    {...register("boyut")}
+                    onChange={handleSizeChange}
+                  />
+                  <span class="checkmark">M</span>
+                </label>
+                <label class="container">
+                  <input
+                    type="radio"
+                    value="L"
+                    {...register("boyut")}
+                    onChange={handleSizeChange}
+                  />
+                  <span class="checkmark">L</span>
+                </label>
               </div>
-              <label style={{ color: "red" }}>
+              <label style={{ color: "red", paddingTop: "25px" }}>
                 {!isSizeSelected && "Boyut seçmelisin"}
               </label>
             </div>
             <div>
-              <div style={{ display: "flex", flexDirection: "column" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "20px",
+                }}
+              >
                 <label style={{ fontSize: "24px" }} htmlFor="exampleSelect">
                   Hamur Seç<span style={{ color: "red" }}>*</span>
                 </label>
@@ -137,14 +159,12 @@ function Forms(props) {
                   <option>Orta</option>
                   <option>Kalın</option>
                 </select>
-                {!isHamurSelected && (
-                  <span style={{ color: "red" }}>
-                    Hamur kalınlığı seçmelisin
-                  </span>
-                )}
               </div>
+              {!isHamurSelected && (
+                <span style={{ color: "red" }}>Hamur kalınlığı seçmelisin</span>
+              )}
             </div>
-          </div>
+          </fieldset>
           <label style={{ fontSize: "24px", marginTop: "3rem" }}>
             Ek Malzemeler
           </label>
@@ -153,8 +173,9 @@ function Forms(props) {
               En fazla 10 tane malzeme seçebilirsiniz.5₺
             </span>
           )}
-          <aside className="formCheckboxes">
+          <fieldset className="formCheckboxes">
             {/*1.checkbox grubu*/}
+
             <div
               style={{
                 display: "flex",
@@ -164,19 +185,22 @@ function Forms(props) {
             >
               {AddingMaterials.map((items, index) => (
                 <div className="checkboxesGroups" key={index}>
-                  <input
-                    className="checkboxInputs"
-                    type="checkbox"
-                    {...register("materials")}
-                    value={items.name}
-                    checked={
-                      selectedMaterials.indexOf(items.name) >= 10 ||
-                      selectedMaterials.indexOf(items.name) == -1
-                        ? false
-                        : true
-                    }
-                  />{" "}
-                  <label>{items.name}</label>
+                  <label key={index} className="checkbox-btn">
+                    <input
+                      className="checkboxInputs"
+                      type="checkbox"
+                      {...register("materials")}
+                      value={items.name}
+                      checked={
+                        selectedMaterials.indexOf(items.name) >= 10 ||
+                        selectedMaterials.indexOf(items.name) == -1
+                          ? false
+                          : true
+                      }
+                    />
+                    <span></span>
+                  </label>
+                  <span>{items.name}</span>
                 </div>
               ))}
             </div>
@@ -191,19 +215,22 @@ function Forms(props) {
             >
               {AddingMaterials2.map((items, index) => (
                 <div className="checkboxesGroups" key={index}>
-                  <input
-                    className="checkboxInputs"
-                    type="checkbox"
-                    {...register("materials")}
-                    value={items.name}
-                    checked={
-                      selectedMaterials.indexOf(items.name) >= 10 ||
-                      selectedMaterials.indexOf(items.name) == -1
-                        ? false
-                        : true
-                    }
-                  />{" "}
-                  <label>{items.name}</label>
+                  <label key={index} className="checkbox-btn">
+                    <input
+                      className="checkboxInputs"
+                      type="checkbox"
+                      {...register("materials")}
+                      value={items.name}
+                      checked={
+                        selectedMaterials.indexOf(items.name) >= 10 ||
+                        selectedMaterials.indexOf(items.name) == -1
+                          ? false
+                          : true
+                      }
+                    />
+                    <span></span>
+                  </label>
+                  <span>{items.name}</span>
                 </div>
               ))}
             </div>
@@ -218,27 +245,32 @@ function Forms(props) {
             >
               {AddingMaterials3.map((items, index) => (
                 <div className="checkboxesGroups" key={index}>
-                  <input
-                    className="checkboxInputs"
-                    type="checkbox"
-                    {...register("materials")}
-                    value={items.name}
-                    checked={
-                      selectedMaterials.indexOf(items.name) >= 10 ||
-                      selectedMaterials.indexOf(items.name) == -1
-                        ? false
-                        : true
-                    }
-                  />{" "}
-                  <label>{items.name}</label>
+                  <label key={index} className="checkbox-btn">
+                    <input
+                      className="checkboxInputs"
+                      type="checkbox"
+                      {...register("materials")}
+                      value={items.name}
+                      checked={
+                        selectedMaterials.indexOf(items.name) >= 10 ||
+                        selectedMaterials.indexOf(items.name) == -1
+                          ? false
+                          : true
+                      }
+                    />
+                    <span></span>
+                  </label>
+                  <span>{items.name}</span>
                 </div>
               ))}
             </div>
-          </aside>
+          </fieldset>
         </fieldset>
         <div style={{ paddingLeft: "0" }}>
           <div>
-            <label htmlFor="Name">İsim</label>
+            <label style={{ fontSize: "20px" }} htmlFor="Name">
+              İsim
+            </label>
           </div>
           <input
             style={{ border: "none" }}
@@ -256,8 +288,16 @@ function Forms(props) {
             <span style={{ color: "red" }}>{errors.name.message}</span>
           )}
         </div>
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <label htmlFor="orderNote">Sipariş Notu</label>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            fontWeight: "600px",
+          }}
+        >
+          <label style={{ fontSize: "20px" }} htmlFor="orderNote">
+            Sipariş Notu
+          </label>
           <input
             style={{ border: "none" }}
             id="orderNote"
@@ -269,7 +309,7 @@ function Forms(props) {
 
         <section className="formSubContainer">
           <hr />
-          <div className="formSubElements">
+          <fieldset className="formSubElements">
             <div style={{ display: "flex", alignItems: "flex-start" }}>
               <button onClick={decrease}>-</button>
               <span style={{ marginTop: "16px" }}>{counter}</span>
@@ -303,7 +343,7 @@ function Forms(props) {
                 </Button>
               </div>
             </div>
-          </div>
+          </fieldset>
         </section>
       </form>
     </>

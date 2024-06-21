@@ -1,6 +1,7 @@
 describe("", () => {
   beforeEach(() => {
     cy.visit("/");
+    cy.viewport(1920, 1080);
   });
 
   it("Clicks on a food card and navigates to order page", () => {

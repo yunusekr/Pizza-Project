@@ -11,7 +11,7 @@ describe("", () => {
   });
 
   it("should enter a name in the input field", () => {
-    const name = "John Doe";
+    const name = "Yunus Eker";
 
     // Navigate to the order page before entering the name
     cy.get(".foodCardsContainer").first().click();

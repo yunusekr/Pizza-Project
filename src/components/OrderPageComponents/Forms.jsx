@@ -275,7 +275,7 @@ function Forms(props) {
           style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
           className="nameAndOrder"
         >
-          <div style={{ paddingLeft: "0" }}>
+          <div className="nameArea" style={{ paddingLeft: "0" }}>
             <div>
               <label style={{ fontSize: "20px" }} htmlFor="Name">
                 İsim
@@ -303,6 +303,7 @@ function Forms(props) {
               flexDirection: "column",
               fontWeight: "600px",
             }}
+            className="noteArea"
           >
             <label style={{ fontSize: "20px" }} htmlFor="orderNote">
               Sipariş Notu

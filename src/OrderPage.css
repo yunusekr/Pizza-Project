@@ -273,5 +273,25 @@ article > p:last-of-type {
   .addedMaterials {
     text-align: center;
   }
+
+  .nameArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nameArea input {
+    text-align: center;
+  }
+
+  .noteArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .noteArea input {
+    text-align: center;
+  }
 }
 /* ORDERPAGE*/

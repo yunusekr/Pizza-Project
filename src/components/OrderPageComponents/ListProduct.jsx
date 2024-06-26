@@ -18,31 +18,33 @@ function ListProduct() {
 
   return (
     <article>
-      <nav className="linksAndProductContainer">
-        <StyledNav to="/" exact activeClassName="active">
-          Anasayfa
-        </StyledNav>
-        <span style={{ fontSize: "15px", color: "#CE2829" }}>
-          - Sipariş Oluştur
-        </span>
-      </nav>
-      <b>
-        <p>{stateData.foodName !== undefined ? stateData.foodName : ""}</p>
-      </b>
-      <div className="productInfos">
-        <div>
-          <b>
-            <p className="foodPrice" style={{ fontSize: "1.8rem" }}>
-              {stateData.foodPrice !== undefined ? stateData.foodPrice : ""}
-            </p>
-          </b>
+      <div className="foodInfoContainers">
+        <nav className="linksAndProductContainer">
+          <StyledNav to="/" exact activeClassName="active">
+            Anasayfa
+          </StyledNav>
+          <span style={{ fontSize: "15px", color: "#CE2829" }}>
+            - Sipariş Oluştur
+          </span>
+        </nav>
+        <b>
+          <p>{stateData.foodName !== undefined ? stateData.foodName : ""}</p>
+        </b>
+        <div className="productInfos">
+          <div>
+            <b>
+              <p className="foodPrice" style={{ fontSize: "1.8rem" }}>
+                {stateData.foodPrice !== undefined ? stateData.foodPrice : ""}
+              </p>
+            </b>
+          </div>
+          <div className="pointAndComment">
+            <p className="foodInfop">{stateData.foodPoint}</p>
+            <p className="foodInfop">{"(" + stateData.foodCommentNo + ")"}</p>
+          </div>
         </div>
-        <div className="pointAndComment">
-          <p className="foodInfop">{stateData.foodPoint}</p>
-          <p className="foodInfop">{"(" + stateData.foodCommentNo + ")"}</p>
-        </div>
+        <p className="foodDescription">{stateData.foodDescription}</p>
       </div>
-      <p>{stateData.foodDescription}</p>
       <Forms price={productPrice} productNames={productName} />
     </article>
   );

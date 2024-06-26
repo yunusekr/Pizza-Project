@@ -43,7 +43,7 @@ function CompletePage() {
           ))}
         </span>
       </dl>
-      <section>
+      <section className="totalSection">
         <p style={{ fontSize: "20px" }}>Sipariş Toplamı</p>
         <div style={{ display: "flex", gap: "3.9rem" }}>
           <span>Seçimler</span>

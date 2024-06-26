@@ -43,8 +43,6 @@ function Forms(props) {
     },
   });
 
-  const selectedMaterials = watch("materials");
-
   const handleHamurChange = (event) => {
     setIsHamurSelected(event.target.value !== "-Hamur Kalınlığı Seç");
   };
@@ -59,6 +57,8 @@ function Forms(props) {
     event.preventDefault();
     setCounter(counter + 1);
   };
+
+  const selectedMaterials = watch("materials");
 
   const decrease = (event) => {
     event.preventDefault();
@@ -104,39 +104,39 @@ function Forms(props) {
                 Boyut Seç<span style={{ color: "red" }}>*</span>
               </legend>
               <div style={{ display: "flex", gap: "0.5rem" }}>
-                <label class="container">
+                <label className="container">
                   <input
                     type="radio"
                     value="S"
                     {...register("boyut")}
                     onChange={handleSizeChange}
                   />
-                  <span class="checkmark">S</span>
+                  <span className="checkmark">S</span>
                 </label>
-                <label class="container">
+                <label className="container">
                   <input
                     type="radio"
                     value="M"
                     {...register("boyut")}
                     onChange={handleSizeChange}
                   />
-                  <span class="checkmark">M</span>
+                  <span className="checkmark">M</span>
                 </label>
-                <label class="container">
+                <label className="container">
                   <input
                     type="radio"
                     value="L"
                     {...register("boyut")}
                     onChange={handleSizeChange}
                   />
-                  <span class="checkmark">L</span>
+                  <span className="checkmark">L</span>
                 </label>
               </div>
               <label style={{ color: "red", paddingTop: "25px" }}>
                 {!isSizeSelected && "Boyut seçmelisin"}
               </label>
             </div>
-            <div>
+            <div className="dough">
               <div
                 style={{
                   display: "flex",
@@ -165,7 +165,10 @@ function Forms(props) {
               )}
             </div>
           </fieldset>
-          <label style={{ fontSize: "24px", marginTop: "3rem" }}>
+          <label
+            className="addedMaterials"
+            style={{ fontSize: "24px", marginTop: "3rem" }}
+          >
             Ek Malzemeler
           </label>
           {selectedMaterials.length > 10 && (
@@ -212,6 +215,7 @@ function Forms(props) {
                 flexDirection: "column",
                 gap: "0.2rem",
               }}
+              className="checkboxes2"
             >
               {AddingMaterials2.map((items, index) => (
                 <div className="checkboxesGroups" key={index}>
@@ -242,6 +246,7 @@ function Forms(props) {
                 flexDirection: "column",
                 gap: "0.2rem",
               }}
+              className="checkboxes3"
             >
               {AddingMaterials3.map((items, index) => (
                 <div className="checkboxesGroups" key={index}>
@@ -266,50 +271,55 @@ function Forms(props) {
             </div>
           </fieldset>
         </fieldset>
-        <div style={{ paddingLeft: "0" }}>
-          <div>
-            <label style={{ fontSize: "20px" }} htmlFor="Name">
-              İsim
-            </label>
-          </div>
-          <input
-            style={{ border: "none" }}
-            id="Name"
-            type="text"
-            placeholder="İsminizi giriniz"
-            {...register("name", {
-              minLength: {
-                value: 3,
-                message: "İsim alanı en az 3 karakter olmalıdır",
-              },
-            })}
-          />
-          {errors.name && (
-            <span style={{ color: "red" }}>{errors.name.message}</span>
-          )}
-        </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            fontWeight: "600px",
-          }}
+        <fieldset
+          style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
+          className="nameAndOrder"
         >
-          <label style={{ fontSize: "20px" }} htmlFor="orderNote">
-            Sipariş Notu
-          </label>
-          <input
-            style={{ border: "none" }}
-            id="orderNote"
-            type="textarea"
-            placeholder="Siparişine eklemek istediğin bir not var mı?"
-            {...register("orderNote")}
-          />
-        </div>
-
+          <div style={{ paddingLeft: "0" }}>
+            <div>
+              <label style={{ fontSize: "20px" }} htmlFor="Name">
+                İsim
+              </label>
+            </div>
+            <input
+              style={{ border: "none" }}
+              id="Name"
+              type="text"
+              placeholder="İsminizi giriniz"
+              {...register("name", {
+                minLength: {
+                  value: 3,
+                  message: "İsim alanı en az 3 karakter olmalıdır",
+                },
+              })}
+            />
+            {errors.name && (
+              <span style={{ color: "red" }}>{errors.name.message}</span>
+            )}
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              fontWeight: "600px",
+            }}
+          >
+            <label style={{ fontSize: "20px" }} htmlFor="orderNote">
+              Sipariş Notu
+            </label>
+            <input
+              style={{ border: "none" }}
+              id="orderNote"
+              type="textarea"
+              placeholder="Siparişine eklemek istediğin bir not var mı?"
+              {...register("orderNote")}
+              className="siparis"
+            />
+          </div>
+        </fieldset>
         <section className="formSubContainer">
           <hr />
-          <fieldset className="formSubElements">
+          <fieldset className="formSubElements subForm">
             <div style={{ display: "flex", alignItems: "flex-start" }}>
               <button onClick={decrease}>-</button>
               <span style={{ marginTop: "16px" }}>{counter}</span>

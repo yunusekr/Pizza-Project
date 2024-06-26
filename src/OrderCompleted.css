@@ -59,4 +59,16 @@
   .Siparis {
     text-align: center;
   }
+
+  .totalSection {
+    margin-bottom: 80px;
+  }
+
+  .order-completed-page img {
+    margin-top: -30px;
+  }
+
+  .captionSlogan1 {
+    margin-top: -40px;
+  }
 }

@@ -219,5 +219,59 @@ article > p:last-of-type {
   .orderMainHeader img {
     width: 100%;
   }
+
+  .foodInfoContainers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foodDescription {
+    width: 75%;
+  }
+
+  .sizeAndThick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dough {
+    margin-right: 30px;
+  }
+
+  .nameAndOrder {
+    align-items: center;
+  }
+
+  .siparis {
+    width: 165%;
+  }
+
+  .subForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formCheckboxes {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 500px;
+    align-items: center;
+  }
+
+  .checkboxes2 {
+    margin-right: 45px;
+    margin-top: 4px;
+  }
+
+  .checkboxes3 {
+    margin-left: 35px;
+    margin-top: 4px;
+  }
+
+  .addedMaterials {
+    text-align: center;
+  }
 }
 /* ORDERPAGE*/

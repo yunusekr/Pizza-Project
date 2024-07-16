@@ -4,7 +4,7 @@ function OrdersHeader() {
   return (
     <header className="orderMainHeader">
       <div className="orderHeader">
-        <img src="Assets/mile1-assets/logo.svg" alt="Logo" />
+        <img src="https://resmim.net/cdn/2024/07/16/WHCLTb.png" alt="Logo" />
       </div>
 
       <img

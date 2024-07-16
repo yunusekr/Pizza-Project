@@ -6,7 +6,7 @@ function Footer() {
       <div className="footer">
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           <address className="firstContainer">
-            <img src="Assets/mile2-aseets/footer/logo-footer.svg" />
+            <img src="https://resmim.net/cdn/2024/07/16/WHEMr1.png" />
             <ul>
               <li
                 style={{

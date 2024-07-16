@@ -12,7 +12,7 @@ function CompletePage() {
     <output className="order-completed-page ">
       <main className="topInfo">
         <div style={{ paddingBottom: "4rem" }}>
-          <img src="Assets/mile1-assets/logo.svg" alt="" />
+          <img src="https://resmim.net/cdn/2024/07/16/WHCnA6.png" alt="" />
         </div>
         <p
           className="captionSlogan1"

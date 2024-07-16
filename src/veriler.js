@@ -1,7 +1,7 @@
 export const kategoriler = [
   {
     name: "YENİ! Kore",
-    icons: "https://resmim.net/cdn/2024/07/16/WHfZtZ.png",
+    icons: "Assets/mile2-aseets/icons/1.svg",
     englishName: "Ramen",
   },
   {

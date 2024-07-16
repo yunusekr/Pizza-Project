@@ -17,7 +17,7 @@ function Footer() {
                 }}
               >
                 <img
-                  src="Assets/mile2-aseets/footer/icons/icon-1.png"
+                  src="https://resmim.net/cdn/2024/07/16/WHwT6W.png"
                   alt="Konum"
                   style={{ width: "28px", height: "28px" }}
                 />
@@ -36,7 +36,7 @@ function Footer() {
               >
                 <img
                   style={{ width: "28px", height: "28px" }}
-                  src="Assets/mile2-aseets/footer/icons/icon-2.png"
+                  src="https://resmim.net/cdn/2024/07/16/WHwC7M.png"
                   alt="Mail"
                 />
                 <p>aciktim@teknolojikyemekler.com</p>
@@ -51,7 +51,7 @@ function Footer() {
               >
                 <img
                   style={{ width: "28px", height: "28px" }}
-                  src="Assets/mile2-aseets/footer/icons/icon-3.png"
+                  src="https://resmim.net/cdn/2024/07/16/WHwEcQ.png"
                   alt="Mail"
                 />
                 <p>+90 216 123 45 67</p>
@@ -73,14 +73,32 @@ function Footer() {
         <div className="thirdContainer">
           <h5>Instagram</h5>
           <div className="instaPhotos">
-            <img src="Assets/mile2-aseets/footer/insta/li-0.png" alt="yemek" />
-            <img src="Assets/mile2-aseets/footer/insta/li-2.png" alt="yemek" />
-            <img src="Assets/mile2-aseets/footer/insta/li-4.png" alt="yemek" />
-            <img src="Assets/mile2-aseets/footer/insta/li-1.png" alt="yemek" />
+            <img
+              src="https://resmim.net/cdn/2024/07/16/WHw8Yc.png"
+              alt="yemek"
+            />
+            <img
+              src="https://resmim.net/cdn/2024/07/16/WHwRm6.png"
+              alt="yemek"
+            />
+            <img
+              src="https://resmim.net/cdn/2024/07/16/WHwsb8.png"
+              alt="yemek"
+            />
+            <img
+              src="https://resmim.net/cdn/2024/07/16/WHwIbL.png"
+              alt="yemek"
+            />
 
-            <img src="Assets/mile2-aseets/footer/insta/li-3.png" alt="yemek" />
+            <img
+              src="https://resmim.net/cdn/2024/07/16/WHw9tK.png"
+              alt="yemek"
+            />
 
-            <img src="Assets/mile2-aseets/footer/insta/li-5.png" alt="yemek" />
+            <img
+              src="https://resmim.net/cdn/2024/07/16/WHwcCQ.png"
+              alt="yemek"
+            />
           </div>
         </div>
       </div>

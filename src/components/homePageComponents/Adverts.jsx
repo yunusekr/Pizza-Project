@@ -54,7 +54,7 @@ function Adverts() {
       <Card inverse>
         <CardImg
           alt="Card image cap"
-          src="Assets/mile2-aseets/cta/kart-1.png"
+          src="https://resmim.net/cdn/2024/07/16/WHTNYj.png"
           width="100%"
         />
         <StyledCardImgOverlay>
@@ -74,12 +74,12 @@ function Adverts() {
         <AdvertsSame
           firstText={"Hackathlon"}
           secondText={"Burger Menü"}
-          imgUrl={"Assets/mile2-aseets/cta/kart-2.png"}
+          imgUrl={"https://resmim.net/cdn/2024/07/16/WHTk06.png"}
         />
         <AdvertsSame
           firstText={"hızlı"}
           secondText={"npm gibi kurye"}
-          imgUrl={"Assets/mile2-aseets/cta/kart-3.png"}
+          imgUrl={"https://resmim.net/cdn/2024/07/16/WHTgW2.png"}
         />
       </div>
     </section>

@@ -27,7 +27,7 @@ function Categories(props) {
       <div key={props.index} onClick={findText}>
         <StyledButton outline>
           <img
-            style={{ paddingRight: "20px" }}
+            style={{ paddingRight: "20px", width: "60px", height: "50px" }}
             src={props.icons}
             alt={props.name}
             onClick={findText}

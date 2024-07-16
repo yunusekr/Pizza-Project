@@ -49,6 +49,7 @@ function FoodCards(props) {
       <Card
         style={{
           width: "18rem",
+          border: "none",
         }}
       >
         <img alt="Card" src={props.foodObj.foodImg} />

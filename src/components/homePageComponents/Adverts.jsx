@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import photo from "../../../Assets/mile2-aseets/cta/kart-1.png";
+import photo1 from "../../../Assets/mile2-aseets/cta/kart-2.png";
+import photo2 from "../../../Assets/mile2-aseets/cta/kart-3.png";
+
 import {
   Card,
   CardImg,
@@ -52,11 +56,7 @@ function Adverts() {
   return (
     <section className="advertsContainer">
       <Card inverse>
-        <CardImg
-          alt="Card image cap"
-          src="https://resmim.net/cdn/2024/07/16/WHTNYj.png"
-          width="100%"
-        />
+        <CardImg alt="Card image cap" src={photo} width="100%" />
         <StyledCardImgOverlay>
           <StyledCardTitle tag="h1">
             Özel <br />
@@ -74,12 +74,12 @@ function Adverts() {
         <AdvertsSame
           firstText={"Hackathlon"}
           secondText={"Burger Menü"}
-          imgUrl={"https://resmim.net/cdn/2024/07/16/WHTk06.png"}
+          imgUrl={photo1}
         />
         <AdvertsSame
           firstText={"hızlı"}
           secondText={"npm gibi kurye"}
-          imgUrl={"https://resmim.net/cdn/2024/07/16/WHTgW2.png"}
+          imgUrl={photo2}
         />
       </div>
     </section>

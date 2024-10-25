@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
-
+import logo from "../../../Assets/mile1-assets/logo.svg";
 function CompletePage() {
   const location = useLocation();
   const stateData = location.state?.responseData;
@@ -12,7 +12,7 @@ function CompletePage() {
     <output className="order-completed-page ">
       <main className="topInfo">
         <div style={{ paddingBottom: "4rem" }}>
-          <img src="https://resmim.net/cdn/2024/07/16/WHCnA6.png" alt="" />
+          <img src={logo} alt="" />
         </div>
         <p
           className="captionSlogan1"

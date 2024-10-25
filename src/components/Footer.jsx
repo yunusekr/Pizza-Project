@@ -1,12 +1,24 @@
 import React from "react";
 import { FaTwitter } from "react-icons/fa";
+import logo from "../../Assets/mile2-aseets/footer/logo-footer.svg";
+import icon1 from "../../Assets/mile2-aseets/footer/icons/icon-1.png";
+import icon2 from "../../Assets/mile2-aseets/footer/icons/icon-2.png";
+import icon3 from "../../Assets/mile2-aseets/footer/icons/icon-3.png";
+import li0 from "../../Assets/mile2-aseets/footer/insta/li-0.png";
+import li1 from "../../Assets/mile2-aseets/footer/insta/li-1.png";
+import li2 from "../../Assets/mile2-aseets/footer/insta/li-2.png";
+import li3 from "../../Assets/mile2-aseets/footer/insta/li-3.png";
+import li4 from "../../Assets/mile2-aseets/footer/insta/li-4.png";
+import li5 from "../../Assets/mile2-aseets/footer/insta/li-5.png";
+
+import li6 from "../../Assets/mile2-aseets/icons/1.svg";
 function Footer() {
   return (
     <footer className="footerContainer">
       <div className="footer">
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           <address className="firstContainer">
-            <img src="https://resmim.net/cdn/2024/07/16/WHEMr1.png" />
+            <img src={logo} />
             <ul>
               <li
                 style={{
@@ -17,7 +29,7 @@ function Footer() {
                 }}
               >
                 <img
-                  src="https://resmim.net/cdn/2024/07/16/WHwT6W.png"
+                  src={icon1}
                   alt="Konum"
                   style={{ width: "28px", height: "28px" }}
                 />
@@ -36,7 +48,7 @@ function Footer() {
               >
                 <img
                   style={{ width: "28px", height: "28px" }}
-                  src="https://resmim.net/cdn/2024/07/16/WHwC7M.png"
+                  src={icon2}
                   alt="Mail"
                 />
                 <p>aciktim@teknolojikyemekler.com</p>
@@ -51,7 +63,7 @@ function Footer() {
               >
                 <img
                   style={{ width: "28px", height: "28px" }}
-                  src="https://resmim.net/cdn/2024/07/16/WHwEcQ.png"
+                  src={icon3}
                   alt="Mail"
                 />
                 <p>+90 216 123 45 67</p>
@@ -73,32 +85,14 @@ function Footer() {
         <div className="thirdContainer">
           <h5>Instagram</h5>
           <div className="instaPhotos">
-            <img
-              src="https://resmim.net/cdn/2024/07/16/WHw8Yc.png"
-              alt="yemek"
-            />
-            <img
-              src="https://resmim.net/cdn/2024/07/16/WHwRm6.png"
-              alt="yemek"
-            />
-            <img
-              src="https://resmim.net/cdn/2024/07/16/WHwsb8.png"
-              alt="yemek"
-            />
-            <img
-              src="https://resmim.net/cdn/2024/07/16/WHwIbL.png"
-              alt="yemek"
-            />
+            <img src={li0} alt="yemek" />
+            <img src={li2} alt="yemek" />
+            <img src={li4} alt="yemek" />
+            <img src={li1} alt="yemek" />
 
-            <img
-              src="https://resmim.net/cdn/2024/07/16/WHw9tK.png"
-              alt="yemek"
-            />
+            <img src={li3} alt="yemek" />
 
-            <img
-              src="https://resmim.net/cdn/2024/07/16/WHwcCQ.png"
-              alt="yemek"
-            />
+            <img src={li5} alt="yemek" />
           </div>
         </div>
       </div>

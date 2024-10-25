@@ -1,3 +1,22 @@
+import food1 from "../Assets/mile2-aseets/pictures/food-1.png";
+import food2 from "../Assets/mile2-aseets/pictures/food-2.png";
+import food4 from "../Assets/mile2-aseets/pictures/food-4.jpg";
+import food3 from "../Assets/mile2-aseets/pictures/food-3.png";
+import food5 from "../Assets/mile2-aseets/pictures/food-5.png";
+import food6 from "../Assets/mile2-aseets/pictures/food-6.png";
+import food7 from "../Assets/mile2-aseets/pictures/food-7.png";
+import food8 from "../Assets/mile2-aseets/pictures/food-8.jpg";
+import food9 from "../Assets/mile2-aseets/pictures/food-9.png";
+import food10 from "../Assets/mile2-aseets/pictures/food-10.png";
+import food11 from "../Assets/mile2-aseets/pictures/food-11.png";
+import food12 from "../Assets/mile2-aseets/pictures/food-12.jpeg";
+import food13 from "../Assets/mile2-aseets/pictures/food-13.jpeg";
+import food14 from "../Assets/mile2-aseets/pictures/food-14.jpg";
+import food15 from "../Assets/mile2-aseets/pictures/food-15.jpg";
+import food16 from "../Assets/mile2-aseets/pictures/food-16.png";
+import food17 from "../Assets/mile2-aseets/pictures/food-17.png";
+import food18 from "../Assets/mile2-aseets/pictures/food-18.png";
+
 export const kategoriler = [
   {
     name: "YENİ! Kore",
@@ -6,7 +25,7 @@ export const kategoriler = [
   },
   {
     name: "Pizza",
-    icons: "https://resmim.net/cdn/2024/07/16/WHNPa1.png",
+    icons: "https://cdn-icons-png.flaticon.com/128/3595/3595458.png",
     englishName: "Pizza",
   },
   {
@@ -34,7 +53,7 @@ export const kategoriler = [
 
 export const foods = [
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHTsbW.png",
+    foodImg: food1,
     foodName: "Terminal Pizza",
     foodPoint: "4.9",
     foodCommentNo: "200",
@@ -44,7 +63,7 @@ export const foods = [
       "Frontend Dev olarak hala position:absolute kullanıyorsun bu çok acı pizza tam sana göre.Pizza,domates,peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen,genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir.Küçük bir pizzaya bazen pizzetta denir.",
   },
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHTFP6.png",
+    foodImg: food2,
     foodName: "Position:Absolute Acı Pizza",
     foodPoint: "4.9",
     foodCommentNo: "928",
@@ -54,7 +73,7 @@ export const foods = [
       "Frontend Dev olarak hala position:absolute kullanıyorsun bu çok acı pizza tam sana göre.Pizza,domates,peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen,genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir.Küçük bir pizzaya bazen pizzetta denir.",
   },
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHXMMk.jpg",
+    foodImg: food4,
     foodName: "Pepperoni Pizza",
     foodPoint: "4.9",
     foodCommentNo: "500",
@@ -64,7 +83,7 @@ export const foods = [
       "Frontend Dev olarak hala position:absolute kullanıyorsun bu çok acı pizza tam sana göre.Pizza,domates,peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen,genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir.Küçük bir pizzaya bazen pizzetta denir.",
   },
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHXkFQ.png",
+    foodImg: food3,
     foodName: "useEffect Tavuklu Burger",
     foodPoint: "4.9",
     foodCommentNo: "462",
@@ -74,7 +93,7 @@ export const foods = [
       "Frontend Dev olarak hala position:absolute kullanıyorsun bu çok acı pizza tam sana göre.Pizza,domates,peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen,genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir.Küçük bir pizzaya bazen pizzetta denir.",
   },
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHXKNH.png",
+    foodImg: food5,
     foodName: "Whopper Burger",
     foodPoint: "4.9",
     foodCommentNo: "200",
@@ -84,7 +103,7 @@ export const foods = [
       "Frontend Dev olarak hala position:absolute kullanıyorsun bu çok acı pizza tam sana göre.Pizza,domates,peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen,genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir.Küçük bir pizzaya bazen pizzetta denir.",
   },
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHXbhR.png",
+    foodImg: food6,
     foodName: "Köfte Burger",
     foodPoint: "4.9",
     foodCommentNo: "356",
@@ -94,7 +113,7 @@ export const foods = [
       "Frontend Dev olarak hala position:absolute kullanıyorsun bu çok acı pizza tam sana göre.Pizza,domates,peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen,genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir.Küçük bir pizzaya bazen pizzetta denir.",
   },
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHXyxy.png",
+    foodImg: food7,
     foodName: "Tabakta Patates",
     foodPoint: "4.9",
     foodCommentNo: "467",
@@ -104,7 +123,7 @@ export const foods = [
       "Frontend Dev olarak hala position:absolute kullanıyorsun bu çok acı pizza tam sana göre.Pizza,domates,peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen,genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir.Küçük bir pizzaya bazen pizzetta denir.",
   },
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHXs9Z.jpg",
+    foodImg: food8,
     foodName: "Kutuda Patates",
     foodPoint: "4.9",
     foodCommentNo: "875",
@@ -115,7 +134,7 @@ export const foods = [
   },
 
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHXVxF.png",
+    foodImg: food9,
     foodName: "Soğan halkası",
     foodPoint: "4.9",
     foodCommentNo: "234",
@@ -126,7 +145,7 @@ export const foods = [
   },
 
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHXLTT.png",
+    foodImg: food10,
     foodName: "Chinese Fast Food",
     foodPoint: "4.9",
     foodCommentNo: "1200",
@@ -137,7 +156,7 @@ export const foods = [
   },
 
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHXa8h.png",
+    foodImg: food11,
     foodName: "Japanese Sushi Fast Food",
     foodPoint: "4.9",
     foodCommentNo: "963",
@@ -148,7 +167,7 @@ export const foods = [
   },
 
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHXcOK.jpg",
+    foodImg: food12,
     foodName: "Chicken fries Fast Food",
     foodPoint: "4.9",
     foodCommentNo: "667",
@@ -159,7 +178,7 @@ export const foods = [
   },
 
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHXqs3.jpg",
+    foodImg: food13,
     foodName: "Coca Cola",
     foodPoint: "4.9",
     foodCommentNo: "742",
@@ -169,7 +188,7 @@ export const foods = [
       "Frontend Dev olarak hala position:absolute kullanıyorsun bu çok acı pizza tam sana göre.Pizza,domates,peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen,genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir.Küçük bir pizzaya bazen pizzetta denir.",
   },
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHjfZR.png",
+    foodImg: food14,
     foodName: "Fanta",
     foodPoint: "4.9",
     foodCommentNo: "655",
@@ -179,7 +198,7 @@ export const foods = [
       "Frontend Dev olarak hala position:absolute kullanıyorsun bu çok acı pizza tam sana göre.Pizza,domates,peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen,genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir.Küçük bir pizzaya bazen pizzetta denir.",
   },
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHjmOn.jpg",
+    foodImg: food15,
     foodName: "Şeftali Ice Tea",
     foodPoint: "4.9",
     foodCommentNo: "234",
@@ -190,7 +209,7 @@ export const foods = [
   },
 
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHjCXZ.png",
+    foodImg: food16,
     foodName: "Yumurtalı Ramen",
     foodPoint: "4.9",
     foodCommentNo: "1345",
@@ -201,7 +220,7 @@ export const foods = [
   },
 
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHj1KW.png",
+    foodImg: food17,
     foodName: "Yumurtalı Özel Soslu Ramen",
     foodPoint: "4.9",
     foodCommentNo: "1265",
@@ -212,7 +231,7 @@ export const foods = [
   },
 
   {
-    foodImg: "https://resmim.net/cdn/2024/07/16/WHj7a3.png",
+    foodImg: food18,
     foodName: "Mantarlı Ramen",
     foodPoint: "4.9",
     foodCommentNo: "1100",
